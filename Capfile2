@@ -1,0 +1,14 @@
+#role :vrails, "sampi@vrails.gumed.edu.pl:2200"
+role :rails1, "-i /home/sampi/.ssh/id_rsa rekrutacja-faktury-sys@rails1.gumed.edu.pl"
+
+task :lista_plikow do
+  run "ls -l"
+end
+
+task :utworz_plik do
+  run "touch plik.txt"
+end
+
+task :usun_plik do
+  run "rm plik.txt"
+end
