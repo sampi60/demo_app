@@ -4,6 +4,7 @@ set :repository, "https://github.com/sampi60/#{application}.git"
 
 set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
+set :use_sudo, false
 
 # role :web, "your web-server here"                          # Your HTTP server, Apache/etc
 # role :app, "your app-server here"                          # This may be the same as your `Web` server
