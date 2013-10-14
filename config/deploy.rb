@@ -6,7 +6,7 @@ set :repository, "https://github.com/#{scm_username}/#{application}.git"
 
 
 set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
-set :branch, "capi"
+set :branch, "master"
 
 set :use_sudo, false
 ssh_options[:forward_agent] = true
