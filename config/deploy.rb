@@ -37,24 +37,3 @@ namespace :deploy do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
 end
-
-#=================================================
-
-#role :vrails, "sampi@vrails.gumed.edu.pl:2200"
-#role :rails1, "rekrutacja-faktury-sys@rails1.gumed.edu.pl"
-role :alwaysdata, "sampi@ssh.alwaysdata.com"
-
-desc "Wyświetla listę plików"
-task :lista_plikow do
-  run "ls -l"
-end
-
-desc "Dodaje nowy plik"
-task :utworz_plik do
-  run "touch plik.txt"
-end
-
-desc "Usuwa plik"
-task :usun_plik do
-  run "rm plik.txt"
-end
